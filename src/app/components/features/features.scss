@@ -1,0 +1,42 @@
+.features {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+
+  .featuresList, .featuresList li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .featuresList {
+
+    li {
+      float: left;
+      padding: 0;
+      height: auto;
+      margin: 0 15px 0 0;
+    }
+
+    span {
+      height: 25px;
+      line-height: 25px;
+      background: #fff;
+      margin-left: 25px;
+      display: inline-block;
+    }
+
+    .security-systems {
+      background: url('/assets/images/sprite.png') scroll 0px -56px transparent;
+    }
+
+    .home-automation {
+      background: url('/assets/images/sprite.png') scroll -25px -56px transparent;
+    }
+
+    .energy-management {
+      background: url('/assets/images/sprite.png') scroll -50px -55px transparent;
+    }
+
+  }
+
+}

@@ -1,0 +1,89 @@
+.specialsAndPromotionsContainer {
+  margin-bottom: 20px;
+  padding: 0;
+
+  .row {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    transition: all linear 0.5s;
+    outline: none;
+    margin-bottom: 1px;
+    padding-right: 0;
+    padding-left: 0;
+
+    &.notes {
+      border-bottom: 1px solid #ccc;
+
+      .note {
+        font-size: 11px;
+
+        h2 {
+          font-size: 11px;
+        }
+      }
+
+      &.collapse.in {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    &.active {
+      margin-bottom: 0;
+    }
+
+    &.active,
+    &.collapse.in {
+      background: #fefdec !important;
+      border-bottom: 1px solid #fefdec;
+    }
+
+    &.shaded {
+      cursor: pointer;
+      background: #F2F2F2;
+    }
+
+    .col {
+      text-align: left;
+      vertical-align: bottom;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+
+      &.logo {
+        width: 170px;
+        height: 66px;
+        background-color: #fff;
+        box-shadow: 0 0 4px 1px rgba(68,68,68,.1);
+        padding: 8px;
+        position: relative;
+        top: 30px;
+        left: 7px;
+
+        img {
+          max-width: 100%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .zoom {
+    color: #000;
+    text-decoration: underline;
+    display: inline-block;
+    background: url('/assets/images/zoom-in.png') center right no-repeat;
+    padding-right: 18px;
+  }
+}
+
+.disclaimer-text{
+  width: 100%;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: #959595;
+}

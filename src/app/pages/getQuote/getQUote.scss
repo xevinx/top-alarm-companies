@@ -1,0 +1,57 @@
+.getQuoteContainer {
+
+  h4 {
+    border-top: 3px solid #ccc;
+    padding-top: 20px;
+  }
+
+  h6 {
+    font-size: 12px;
+    padding: 6px;
+    margin: 0 0 18px 0;
+  }
+
+  .row {
+      font-size: 14px;
+      padding-bottom: 4px;
+      margin: 5px 0;
+
+      label {
+        display: inline-block;
+        line-height: 45px;
+        margin: 0;
+        text-align: right;
+        color: #283d68;
+        font-size: 14px;
+        padding-top: 8px;
+        padding: 0;
+      }
+  }
+
+  .row.phone .col-xs-1, .row.phone .field {
+    margin-right: 2px;
+
+    &#phone3 {
+    }
+  }
+
+  .top-field {
+    margin-top: 5px;
+  }
+
+  label {
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .terms {
+    color: #333;
+    font-size: 11px;
+  }
+
+  .get-quote {
+    margin-top: 20px;
+  }
+
+}

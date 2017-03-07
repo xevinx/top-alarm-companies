@@ -1,0 +1,6 @@
+<section class="text-center row thumbnails">
+  <div class="holder center-block">
+    <div class="col-md-3 thumbnail" ng-repeat="company in siteData.partners" style="background: url(assets/images/{{company.image.src}}) no-repeat {{company.image.position.x}}px {{company.image.position.y}}px; width: {{company.image.width}}px; height: {{company.image.height}}px" title="{{ company.title }}">* {{company.title}} *</div>
+    <div class="clearfix"></div>
+  </div>
+</section>

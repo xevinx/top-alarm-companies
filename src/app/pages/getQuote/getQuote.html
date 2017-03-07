@@ -1,0 +1,96 @@
+<section class="getQuoteContainer">
+    <div id="banner" class="grid_24 alpha omega get-quote">
+        <div class="grid_15">
+            <h2>Get 3 Free Quotes from Companies You Can Trust</h2>
+            <h3>Review free comparison quotes from multiple, top-rated, <span class="condensed_bold">security companies</span> &amp; save!</h3>
+        </div>
+    </div>
+
+    <form name="userForm">
+        <div id="page1">
+
+            <div id="quotebox1" class="quote-box">
+                <h6 class="badge badge-info">Please tell us about your property</h6>
+                <div class="row form-group" >
+                    <label class="col-xs-2 col-form-label" for="type">Type...</label>
+                    <div class="col-xs-10 btn-group btn-group-lg " role="group" aria-label="Type of Quote" data-toggle="buttons">
+                      <button type="radio" id="residential" class="btn btn-primary toggle-button">Residential</button>
+                      <button type="radio" id="commercial" class="btn btn-primary toggle-button">Commercial</button>
+                    </div>
+                </div>
+
+                <div class="row form-group" >
+                    <label class="col-xs-2 col-form-label" for="own_rent">Own or Rent?</label>
+                    <div class="col-xs-10 btn-group btn-group-lg " role="group" aria-label="Own or Rent" data-toggle="buttons">
+                      <button type="radio" id="own" class="btn btn-primary toggle-button">Own</button>
+                      <button type="radio" id="rent" class="btn btn-primary toggle-button">Rent</button>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label col-form-label-lg" for="address">Address</label>
+                    <div class="col-xs-5">
+                        <div class="input-group">
+                          <input type="text" class="form-control-lg form-control" autocomplete="off" ng-model="getQuote.user.address" g-places-autocomplete id="address" aria-describedby="Address input field">
+                          <span class="input-group-addon invisible" id="basic-addon3"></span>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="page2">
+            <div id="quotebox3" class="quote-box">
+                <h6 class="badge badge-info">Contact Information</h6>
+
+
+                <div class="row form-group" >
+                    <label class="col-xs-2 col-form-label" for="first_name">First Name:</label>
+                    <div class="col-xs-5">
+                        <input type="text" name="first_name" id="first_name" class="form-control" ng-model="getQuote.user.firstName" value="">
+                    </div>
+                </div>
+
+                <div class="row form-group" >
+                    <label class="col-xs-2 col-form-label" for="last_name">Last Name:</label>
+                    <div class="col-xs-5">
+                        <input type="text" name="last_name" id="last_name" class="form-control" ng-model="getQuote.user.lastName" value="">
+                    </div>
+                </div>
+
+                <div class="row form-group" >
+                    <label class="col-xs-2 col-form-label" for="bname">Company Name:</label>
+                    <div class="col-xs-5">
+                        <input type="text" name="bname" id="bname" class="form-control" ng-model="getQuote.user.company" value="">
+                    </div>
+                </div>
+
+                <div class="row form-group" >
+                    <label class="col-xs-2 col-form-label" for="email">E-Mail Address:</label>
+                    <div class="col-xs-5">
+                        <input type="email" name="email" id="email" placeholder="your@email.address" ng-model="getQuote.user.email" class="form-control" value="" required >
+                    </div>
+                </div>
+
+                <div class="row form-group phone" >
+                    <label class="col-xs-2 col-form-label" for="first_name">Phone Number:</label>
+                    <div class="col-xs-5">
+                        <input class="form-control" type="tel" placeholder="480-555-1234" ng-model="getQuote.user.phone" id="phone">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="termBox" class="terms col-xs-5 col-xs-offset-2">
+                <strong>Your personal information is important and is protected by 256 bit encryption!</strong><br>
+                Typing my name and clicking 'Get Quotes' gives my express written consent to be contacted directly by ADT (or an ADT Authorized Dealer), Vivint, FrontPoint Security, Security Pro, Protect America, CPI Security Systmes, LiveWatch Security which may be through the use of an automated dialer at the numbers provided, including cell phones, even if I am on a DNC list.
+            </div>
+
+            <div class="col-xs-7 text-right">
+                <button type="button" class="btn get-quote btn-success btn-arrow-right" ng-click="getQuote.quote()">Get Quote</button>
+            </div>
+
+        </div>
+    </form>
+</section>
